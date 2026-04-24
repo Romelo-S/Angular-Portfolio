@@ -1,12 +1,14 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, signal, HostListener,Renderer2, OnInit } from '@angular/core';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { CursorGlowDirective } from "../Components/Cursor-glow.directive";
+import { Experience } from "../Experience/Experience";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CursorGlowDirective, RouterLink],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App {
+export class App{
   protected readonly title = signal('Angular-Portfolio');
 }

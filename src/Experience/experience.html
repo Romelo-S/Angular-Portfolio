@@ -1,0 +1,15 @@
+<section>
+    <h4>Proficiencies</h4>
+    <h2>My Skills</h2>
+<div class="ExperienceBox">
+    <h3>These Are My Current Skills</h3>
+    <div class="tech-stack"> 
+    @for(icon of icons; track icon.name){
+        <div class="experience_details">
+        <ng-icon [name]="icon.name" size="36"></ng-icon>
+        <span>{{ icon.label }}</span>
+        </div>
+    }
+</div>
+</div>
+</section>

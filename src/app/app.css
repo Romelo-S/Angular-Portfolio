@@ -1,0 +1,38 @@
+.cursor-glow{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(17, 0, 252, .15) 0%, rgba(79, 172, 254, .08) 40%, transparent 0%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    opacity: 0;
+    transition: left 0.12s ease-out, top 0.12s ease-out, background 0.2s ease;
+}
+@media (hover: none) {
+  .cursor-glow {
+    display: none;
+  }
+}
+.randomBox{
+    display: block;
+    width: 400px;
+    height: 400px;
+    color:brown;
+}
+nav{
+  width: max-content;
+  padding: .7rem 1.7rem;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%) translateY(.75rem);
+  bottom: 2rem;
+  display: flex;
+  gap: .8rem;
+  border-radius: 3rem;
+  opacity: 1;
+  /* pointer-events: none; */
+  transition: opacity .35s ease, transform .35s ease;
+}
