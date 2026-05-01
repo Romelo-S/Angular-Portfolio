@@ -31,8 +31,30 @@ nav{
   bottom: 2rem;
   display: flex;
   gap: .8rem;
+  border: .2rem solid gray;
   border-radius: 3rem;
   opacity: 1;
   /* pointer-events: none; */
   transition: opacity .35s ease, transform .35s ease;
+}
+
+nav span:hover{
+  transform: scale(1.25);
+  filter: drop-shadow(0,0,4px rgba(0,0,0,0.2rem))
+}
+.link{
+  background-color: aqua;
+  position:relative;
+  /* clip-path: polygon( 0% 0%, 85% 0%, 100% 100%, 0% 100%  ); */
+}
+.link:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  left: 3rem;
+  width:.12rem;
+  top: 0;
+  height:100%;
+  background: black;
+  transform: skewX(-15deg);
+  transform-origin: top;
 }

@@ -17,17 +17,17 @@
     border-radius: 1rem;
     border: 1px solid rgba(255, 255, 255, .08);
     transition: border-color .3s ease;
-    cursor: url('Excellent.png') 16 16, auto !important;
+    /* cursor: url('Excellent.png') 16 16, auto !important; */
 }
 .ExperienceBox{
     border-color: #0000001a;
     grid-column: auto;
-    width: 400px; /* content width */
-    padding: 5px; /* space inside */
+    width: 400px; 
+    padding: 5px; 
     border: 5px solid green;
-    margin: 15px; /* space outside */
+    margin: 15px; 
 }
 .experience_details:hover {
   background: rgba(248, 5, 5, 0.05);
-  cursor: url('Excellent.png') 16 16, auto !important;
+  /* cursor: url('Excellent.png') 16 16, auto !important; */
 }

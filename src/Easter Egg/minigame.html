@@ -1,0 +1,15 @@
+<h1 class="Cookie-title">Box Clicker</h1>
+<div class="clicker">
+    <div class="Box-container">
+        <img id="Excellent" src="\assets\images\Excellent.png" alt="box" (click)="onClick()">
+    </div>
+    <h2>Excellents: <span id="count">{{clicker.count()}}</span></h2>
+    <p>Click Power: {{ clicker.clickPower() }}</p>
+    <p>Auto Clickers: {{ clicker.autoClickers() }}</p>
+
+    <div class="shop">
+        <button id="upgradeBtn" (click)="onUpgrade()">Upgrade Click (+1) — Cost: {{clicker.upgradePrice()}}</button>
+        <button id="autoBtn" (click)="onAuto()">Buy Auto Clicker — Cost: {{clicker.autoPrice()}}</button>
+  </div>
+
+</div>

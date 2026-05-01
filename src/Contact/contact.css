@@ -1,0 +1,70 @@
+h5{
+    display: block;
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    text-align: center;
+}
+.contacts{
+    background: lightblue;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+h2,h4{
+    text-align: center;
+}
+.contacts:hover{
+    border: 3px solid black;
+    transition: border-color .3 ease;
+}
+.btn{
+    width: max-content;
+    display: inline-block;
+    color: red;
+    padding: .75rem 1.2rem;
+    border-radius: .4rem;
+    cursor: pointer;
+    border: 1px solid whitesmoke;
+}
+input , textarea{
+    width: 90%;
+    padding: 1rem;
+    border-radius: .75rem;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: black;
+    font-family: inherit;
+    font-size: .9rem;
+    transition: border-color .3s ease;
+}
+.contacts{
+    display: grid;
+    gap: 2rem;
+}
+form{
+    display: flex;
+    gap: .9rem;
+    flex-direction: column;
+    width: 170%;
+}
+.container{
+    display: grid;
+    width: 100%;
+    padding-right: .5rem ;
+    max-width: 100%;
+    margin:0;
+    justify-content: center;
+    height: 100vh;
+}
+/* .contact_me{
+    display:inline;
+    text-align: center;
+    margin: 0;
+    margin-block-start:0;
+    margin-block-end: 0;
+    display:inline;
+    /* height: 10vh; */
